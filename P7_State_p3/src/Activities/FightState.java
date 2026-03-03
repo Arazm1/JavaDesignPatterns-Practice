@@ -24,6 +24,7 @@ public class FightState extends State{
 
 
         //Level-Up check
+        /*
         if(getCharacter().getXPPoints() >= 300){
             System.out.println("You have leveled up to Master Level!");
             getCharacter().setLevel(Character.levelType.Master);
@@ -42,6 +43,7 @@ public class FightState extends State{
         else{
             getCharacter().setState(new NoviceState(this.getCharacter()));
         }
+        */
     }
 
 

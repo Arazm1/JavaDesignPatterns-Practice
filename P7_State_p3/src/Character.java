@@ -3,6 +3,11 @@ package P7_State_p3.src;
 import java.util.Random;
 import java.util.Scanner;
 
+import P7_State_p3.src.Levels.ExpertState;
+import P7_State_p3.src.Levels.IntermediateState;
+import P7_State_p3.src.Levels.MasterState;
+import P7_State_p3.src.Levels.NoviceState;
+
 public class Character {
     private static Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
@@ -109,6 +114,29 @@ public class Character {
 
     public void addHealthPoints(double healthPoints){
         this.healthPoints += healthPoints;
+    }
+
+    public void checkLevelUp(){
+        //Level-Up check
+        if(getXPPoints() >= 300){
+            System.out.println("You have leveled up to Master Level!");
+            setLevel(Character.levelType.Master);
+            setState(new MasterState(this));
+        }
+        else if(getXPPoints() >= 200){
+            System.out.println("You have leveled up to Expert Level!");
+            setLevel(Character.levelType.Expert);
+            setState(new ExpertState(this));
+        }
+        else if(getXPPoints() >= 100){
+            System.out.println("You have leveled up to Intermediate Level!");
+            setLevel(Character.levelType.Master);
+            setState(new IntermediateState(this));
+        }
+        else{
+            setState(new NoviceState(this));
+        }
+
     }
 
     public void printCharacterStats(){
