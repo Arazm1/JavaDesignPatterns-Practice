@@ -22,8 +22,6 @@ public class EncryptDecryptString {
             System.out.println(encryptedString);
             String decrypted = decryptString(encryptedData, key, chipher);
             System.out.println(decrypted);
-
-
         }
         catch(Exception e){
 
@@ -52,7 +50,6 @@ public class EncryptDecryptString {
             byte[] textEncrypted = cipher.doFinal(text);
 
             return textEncrypted;
-
         }
         catch(Exception e){
             return null;
