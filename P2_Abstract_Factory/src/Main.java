@@ -18,7 +18,7 @@ public class Main {
         }
 
         Application app = new Application(factory);
-        app.paint();
+        app.paintAll();
     }
     
 }

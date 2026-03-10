@@ -14,7 +14,7 @@ public class Application {
         this.checkbox = factory.createCheckbox();
     }
 
-    public void paint(){
+    public void paintAll(){
         button.paint();
         checkbox.paint();
     }
