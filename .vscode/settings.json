@@ -1,8 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "assignment/src/main/java",
-        "assignment/src/test/java",
-
+        "."
     ],
     "java.project.referencedLibraries": [],
     "java.configuration.updateBuildConfiguration": "interactive"
