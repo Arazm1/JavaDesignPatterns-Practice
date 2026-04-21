@@ -3,12 +3,12 @@ package P18_Prototype_p2.src;
 public abstract class Item implements Cloneable{
     private String author;
     private String title;
-    private int publicationYear;
+    private Genre genre;
 
-    public Item(String author, String title, int publicationYear){
+    public Item(String author, String title, Genre genre){
         this.author = author;
         this.title = title;
-        this.publicationYear = publicationYear;
+        this.genre = genre;
     }
 
     public Item clone(){
@@ -23,11 +23,7 @@ public abstract class Item implements Cloneable{
 
     @Override
     public String toString(){
-        return "author: " + this.author + "\n" +
-                "title: " + this.title + "\n" +
-                "publicationyear: " + this.publicationYear;
-
+        return this.title + " by " + this.author + " (" + this.genre + ")";
 
     }
-    
 }

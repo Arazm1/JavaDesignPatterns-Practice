@@ -15,8 +15,8 @@ public class RecommendationBuilder {
         recommendation.setTargetAudience(audience);
     }
 
-    public void addBook(String author, String title, int publicationYear){
-        recommendation.addItem(new Book(author, title, publicationYear));
+    public void addBook(String author, String title, Genre genre){
+        recommendation.addItem(new Book(author, title, genre));
     }
 
     public Recommendation getResult(){

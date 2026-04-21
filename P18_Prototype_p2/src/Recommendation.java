@@ -23,6 +23,10 @@ public class Recommendation implements Cloneable{
         items.add(item);
     }
 
+    public void removeItem(Item item){
+        items.remove(item);
+    }
+
     public List<Item> getItems(){
         return this.items;
     }
@@ -46,7 +50,7 @@ public class Recommendation implements Cloneable{
 
     @Override
     public String toString(){
-        return "Recommendation list with items " + items;
+        return "Recommendation list with items \n" + this.items;
     }
 
 

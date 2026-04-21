@@ -5,8 +5,8 @@ public class Book extends Item implements Cloneable{
     private int id;
     
 
-    public Book(String author, String title, int publicationYear){
-        super(author, title, publicationYear);
+    public Book(String author, String title, Genre genre){
+        super(author, title, genre);
         this.id = ++idCounter;
     }
 
