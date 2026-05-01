@@ -1,5 +1,6 @@
 package P11_Memento.src;
 
+//Memento
 public class Snapshot {
     private Editor editor;
     private String text;

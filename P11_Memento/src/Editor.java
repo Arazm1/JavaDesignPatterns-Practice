@@ -1,5 +1,6 @@
 package P11_Memento.src;
 
+//Originator
 public class Editor {
     private String text;
     private int curlX;

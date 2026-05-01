@@ -1,5 +1,6 @@
 package P11_Memento.src;
 
+//Caretaker
 public class Command {
     private Snapshot backup;
     private Editor editor;
