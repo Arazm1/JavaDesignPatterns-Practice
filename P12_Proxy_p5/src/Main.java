@@ -22,6 +22,7 @@ public class Main {
         MedicalRecord admin = new MedicalRecordProxy(MedicalRecordProxy.ALLOWED_ROLES.ADMIN, record);
         System.out.println(admin.getPatientName());
         System.out.println(admin.getDiagnosis());
+        System.out.println(admin.getPrescription());
         admin.deleteRecord();
     }
 }
