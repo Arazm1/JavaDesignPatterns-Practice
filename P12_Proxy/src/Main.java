@@ -1,5 +1,5 @@
 package P12_Proxy.src;
-3
+
 public class Main {
     public static void main(String[] args) {
         City city1 = new CityProxy("Helsinki", "Finland", 648000);
