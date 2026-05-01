@@ -1,6 +1,6 @@
 public class GridModel {
 
-    public static final int SIZE = 0;
+    public static final int SIZE = 8;
     private boolean[][] pixels = new boolean[SIZE][SIZE];
     private int cursorRow = 0;
     private int cursorCol = 0;

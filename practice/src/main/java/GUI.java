@@ -24,7 +24,7 @@ public class GUI extends Application {
         VBox layout = new VBox(10, btnCode);
         Scene scene = new Scene(layout, 300, 100);
 
-        scene.setOnKeyPressed(e -> {
+        layout.setOnKeyPressed(e -> {
             switch (e.getCode()) {
                 case UP    -> moveUp.execute();
                 case DOWN  -> moveDown.execute();

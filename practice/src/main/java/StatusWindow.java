@@ -22,6 +22,8 @@ public class StatusWindow {
         stage.setScene(scene);
         stage.setTitle("Status Window");
         stage.show();
+        updateGrid(new GridModel());
+        stage.requestFocus();
     }
 
 
