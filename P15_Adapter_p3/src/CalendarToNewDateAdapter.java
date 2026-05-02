@@ -2,6 +2,7 @@ package P15_Adapter_p3.src;
 
 import java.util.Calendar;
 
+//Adapter, translates between the two
 public class CalendarToNewDateAdapter implements NewDateInterface {
 
     private Calendar calendar;

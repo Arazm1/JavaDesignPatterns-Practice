@@ -1,5 +1,6 @@
 package P15_Adapter_p3.src;
 
+//Client -> uses NewDateInterface, never sees Calendar
 public class Main {
     public static void main(String[] args){
 
