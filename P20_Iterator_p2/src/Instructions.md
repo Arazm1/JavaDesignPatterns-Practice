@@ -1,0 +1,2 @@
+A library manages a collection of books stored internally in a plain array (not an ArrayList or any Java collection). The library needs to provide two different ways to traverse its books — a forward iterator that goes from first to last, and a filtered iterator that only returns books of a specific genre.
+The client code must never know that the books are stored in an array.
