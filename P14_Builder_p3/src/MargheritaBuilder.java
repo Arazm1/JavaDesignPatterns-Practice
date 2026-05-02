@@ -1,5 +1,7 @@
 package P14_Builder_p3.src;
 
+//Concrete Builder
+//defines what each step actually does (which ingredients get added)
 public class MargheritaBuilder implements PizzaBuilder{
 
     private Pizza pizza;

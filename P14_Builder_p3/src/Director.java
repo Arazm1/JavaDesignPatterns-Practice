@@ -1,5 +1,7 @@
 package P14_Builder_p3.src;
 
+//Director
+//decides which steps are executed and in what order
 public class Director {
 
     private PizzaBuilder builder;
