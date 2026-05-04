@@ -1,5 +1,6 @@
 package P22_Command.src;
 
+//Invoker
 public class RemoteControl {
 
     private Command currentCommand;
