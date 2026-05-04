@@ -9,7 +9,7 @@ public class RemoteControl {
         this.currentCommand = command;
     }
 
-    //Execute the loaded command
+    //Execute the loaded Command
     public void pressButton(){
         if(currentCommand != null){
             currentCommand.execute();
@@ -19,6 +19,7 @@ public class RemoteControl {
         }
     }
 
+    //Undo the last Command
     public void pressUndo(){
         if(lastExecutedCommand != null){
             lastExecutedCommand.undo();
